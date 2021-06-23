@@ -1,0 +1,31 @@
+{
+  "name": "workshop-protractor",
+  "version": "1.0.0",
+  "description": "This is a workshop about Protractor",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
+    "test": "npm run build && protractor dist/protractor/local.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejaGonzalezV/protractor-workshop.git"
+  },
+  "keywords": [
+    "ui-testing",
+    "protractor"
+  ],
+  "author": "Alejandra Gonzalez Velez <alejandra.gonzalezv@perficient.com> (github.com/alejagonzalezv)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlejaGonzalezV/protractor-workshop/issues"
+  },
+  "homepage": "https://github.com/AlejaGonzalezV/protractor-workshop#readme",
+  "devDependencies": {
+    "@types/jasminewd2": "^2.0.9",
+    "@types/node": "^15.12.4",
+    "protractor": "^7.0.0",
+    "typescript": "^4.3.4"
+  }
+}
