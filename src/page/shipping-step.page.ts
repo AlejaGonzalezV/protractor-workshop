@@ -1,16 +1,16 @@
 import { $, ElementFinder } from 'protractor';
 
 export class ShippingStepPage {
-  private checkbox: ElementFinder;
-  private payment: ElementFinder;
+  private termsOfService: ElementFinder;
+  private paymentStep: ElementFinder;
 
   constructor () {
-    this.checkbox = $('#cgv');
-    this.payment = $('#form > p > button > span');
+    this.termsOfService = $('#cgv');
+    this.paymentStep = $('#form > p > button > span');
   }
 
   public async goToPaymentStep(): Promise<void> {
-    await this.checkbox.click();
-    await this.payment.click();
+    await this.termsOfService.click();
+    await this.paymentStep.click();
   }
 }

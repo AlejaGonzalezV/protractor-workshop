@@ -7,7 +7,7 @@ export class OrderSummaryPage {
     this.confirmation = $('#center_column > div > p > strong');
   }
 
-  public async getConfirmation(): Promise<string> {
+  public async getConfirmationMessage(): Promise<string> {
     return this.confirmation.getText();
   }
 }

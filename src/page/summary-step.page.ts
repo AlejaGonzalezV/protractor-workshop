@@ -1,13 +1,13 @@
 import { $, ElementFinder } from 'protractor';
 
 export class SummaryStepPage {
-  private checkout: ElementFinder;
+  private signInStep: ElementFinder;
 
   constructor () {
-    this.checkout = $('.cart_navigation span');
+    this.signInStep = $('.cart_navigation span');
   }
 
   public async goToSignIn(): Promise<void> {
-    await this.checkout.click();
+    await this.signInStep.click();
   }
 }
