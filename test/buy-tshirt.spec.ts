@@ -24,7 +24,7 @@ describe('Buy a t-shirt', () => {
   const paymentStepPage: PaymentStepPage = new PaymentStepPage();
   const bankPaymentPage: BankPaymentPage = new BankPaymentPage();
   const orderSummaryPage: OrderSummaryPage = new OrderSummaryPage();
-
+  
   beforeEach(() => {
     jasmine.DEFAULT_TIMEOUT_INTERVAL = 120000;
   });
