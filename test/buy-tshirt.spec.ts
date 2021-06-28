@@ -24,7 +24,7 @@ describe('Buy a t-shirt', () => {
   const paymentStepPage: PaymentStepPage = new PaymentStepPage();
   const bankPaymentPage: BankPaymentPage = new BankPaymentPage();
   const orderSummaryPage: OrderSummaryPage = new OrderSummaryPage();
-  
+
   beforeEach(() => {
     jasmine.DEFAULT_TIMEOUT_INTERVAL = 120000;
   });
@@ -62,6 +62,5 @@ describe('Buy a t-shirt', () => {
 
     await (browser.sleep(3000));
     await expect(orderSummaryPage.getConfirmation()).toBe('Your order on My Store is complete.');
-
   });
 });
