@@ -4,7 +4,7 @@ export class ProductAddedModalPage {
   private shoppingCardMenu: ElementFinder;
 
   constructor () {
-    this.shoppingCardMenu = $('[style*="display: block;"] .button-container > a');
+    this.shoppingCardMenu = $('#layer_cart [title="Proceed to checkout"]');
   }
 
   public async goToShoppingCartSummary(): Promise<void> {

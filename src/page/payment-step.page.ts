@@ -4,7 +4,7 @@ export class PaymentStepPage {
   private bankPaymentMenu: ElementFinder;
 
   constructor () {
-    this.bankPaymentMenu = $('#HOOK_PAYMENT > div:nth-child(1) > div > p > a');
+    this.bankPaymentMenu = $('#HOOK_PAYMENT [title="Pay by bank wire"]');
   }
 
   public async goToBankPayment(): Promise<void> {
