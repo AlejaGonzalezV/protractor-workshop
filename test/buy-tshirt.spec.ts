@@ -29,7 +29,6 @@ describe('Buy a t-shirt', () => {
     await browser.waitForAngularEnabled(false);
     await browser.get('http://automationpractice.com/');
 
-    await (browser.sleep(3000));
     await menuContentPage.goToTShirtMenu();
 
     await (browser.sleep(3000));
