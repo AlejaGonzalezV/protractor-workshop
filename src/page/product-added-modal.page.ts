@@ -1,9 +1,11 @@
-import { $, ElementFinder, ExpectedConditions, browser } from 'protractor';
+import {
+  $, ElementFinder, ExpectedConditions, browser,
+} from 'protractor';
 
 export class ProductAddedModalPage {
   private shoppingCardMenu: ElementFinder;
 
-  constructor () {
+  constructor() {
     this.shoppingCardMenu = $('#layer_cart [title="Proceed to checkout"]');
   }
 

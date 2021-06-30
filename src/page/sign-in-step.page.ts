@@ -2,10 +2,12 @@ import { $, ElementFinder } from 'protractor';
 
 export class SignInStepPage {
   private email: ElementFinder;
+
   private password: ElementFinder;
+
   private signIn: ElementFinder;
 
-  constructor () {
+  constructor() {
     this.email = $('#email');
     this.password = $('#passwd');
     this.signIn = $('#SubmitLogin');

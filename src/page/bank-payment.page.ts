@@ -3,7 +3,7 @@ import { $, ElementFinder } from 'protractor';
 export class BankPaymentPage {
   private orderSummaryMenu: ElementFinder;
 
-  constructor () {
+  constructor() {
     this.orderSummaryMenu = $('#cart_navigation > [type="submit"]');
   }
 

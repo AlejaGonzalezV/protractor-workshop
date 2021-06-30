@@ -2,11 +2,12 @@ import { $, ElementFinder } from 'protractor';
 
 export class ShippingStepPage {
   private termsOfService: ElementFinder;
+
   private paymentStep: ElementFinder;
 
-  constructor () {
+  constructor() {
     this.termsOfService = $('#cgv');
-    this.paymentStep = $('#form [name="processCarrier"]');
+    this.paymentStep = $('#center_column [type="submit"]');
   }
 
   public async goToPaymentStep(): Promise<void> {
