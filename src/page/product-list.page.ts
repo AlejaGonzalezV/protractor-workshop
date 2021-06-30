@@ -1,9 +1,11 @@
-import { $, ElementFinder, ExpectedConditions, browser } from 'protractor';
+import {
+  $, ElementFinder, ExpectedConditions, browser,
+} from 'protractor';
 
 export class ProductListPage {
   private addToCartMenu: ElementFinder;
 
-  constructor () {
+  constructor() {
     this.addToCartMenu = $('#center_column [Title="Add to cart"]');
   }
 

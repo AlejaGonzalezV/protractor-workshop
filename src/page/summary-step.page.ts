@@ -3,7 +3,7 @@ import { $, ElementFinder } from 'protractor';
 export class SummaryStepPage {
   private signInStep: ElementFinder;
 
-  constructor () {
+  constructor() {
     this.signInStep = $('#center_column [title="Proceed to checkout"]');
   }
 

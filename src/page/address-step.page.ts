@@ -3,7 +3,7 @@ import { $, ElementFinder } from 'protractor';
 export class AddressStepPage {
   private shippingStep: ElementFinder;
 
-  constructor () {
+  constructor() {
     this.shippingStep = $('#center_column [name="processAddress"]');
   }
 

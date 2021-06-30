@@ -3,8 +3,8 @@ import { $, ElementFinder } from 'protractor';
 export class PaymentStepPage {
   private bankPaymentMenu: ElementFinder;
 
-  constructor () {
-    this.bankPaymentMenu = $('#HOOK_PAYMENT [title="Pay by bank wire"]');
+  constructor() {
+    this.bankPaymentMenu = $('a.bankwire');
   }
 
   public async goToBankPayment(): Promise<void> {
