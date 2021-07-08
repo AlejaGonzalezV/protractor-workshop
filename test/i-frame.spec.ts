@@ -9,7 +9,7 @@ describe('Given a practice iframe page', () => {
     await browser.get('https://demoqa.com/frames');
   });
 
-  describe('When the height of an iframe wants to be modify', () => {
+  describe('When the height of an iframe is modified', () => {
     const iFramePage: IFramePage = new IFramePage();
     const height = 500;
     beforeAll(async () => {
