@@ -11,13 +11,12 @@ describe('Given a practice iframe page', () => {
 
   describe('When the height of an iframe is modified', () => {
     const iFramePage: IFramePage = new IFramePage();
-    const height = 500;
     beforeAll(async () => {
-      await iFramePage.setFormFrameHeight(height);
+      await iFramePage.setFormFrameHeight(500);
     });
 
     it('Then it should have a new height', async () => {
-      expect(await iFramePage.getIframeHeight()).toEqual(height);
+      expect(await iFramePage.getIframeHeight()).toEqual(500);
     });
   });
 });
