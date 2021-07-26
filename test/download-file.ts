@@ -20,4 +20,3 @@ describe('Given a practice download page', () => {
     });
   });
 });
-
